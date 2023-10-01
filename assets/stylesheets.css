@@ -6,9 +6,23 @@ body{
     background-color: rgba(98, 68, 68, 0.671);
    
 }
-
-
-
+.button1{
+position: relative;
+top: 20px;
+}
+.button2{
+position: relative;
+top: 20px;
+}
+.button3{
+position: relative;
+top: 20px;
+}
+.Question{
+    position: relative;
+    bottom: 100px;
+    font-size: 60px;
+}
 .div{
     padding: 30px;;
     background-color: rgb(189, 177, 177);
