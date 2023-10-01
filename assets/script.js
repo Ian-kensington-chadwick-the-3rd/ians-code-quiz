@@ -1,9 +1,9 @@
-// var button = document.querySelector("#btn")
-// var timerEl = document.getElementById('countdown')
+var button = document.querySelector("#btn")
+var timerEl = document.getElementById('countdown')
 var questionArray = document.getElementById('question')
 const startButton = document.getElementById('start-btn')
 startButton.addEventListener('click', startGame)
-nextButton = document.getElementById('next-btn')
+const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 let shuffledQuestions, currentQuestionIndex
 const questionElement = document.getElementById('question')
@@ -41,18 +41,35 @@ question.answers.forEach(answer => {
 function resetState(){
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild){
-        answerButtonsElement.removeChild
-        (answerButtonsElement.firstChild)
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+        
     }
 }
 
 
 function selectAnswer(e) {
-
-
+const selectedButton = e.target
+const correct = selectedButton.dataset.correct
+setStatusClass(document.body, correct)
+Array.from(answerButtonsElement.children).forEach(button => {
+    setStatusClass(button, button.dataset.correct)
+})
+nextButton.classList.remove('hide')
 
 }
+function setStatusClass(element, correct){
+    clearStatusClass(element)
+    if (correct) {
+        element.classList.add('correct')
+    } else {
+        element.classList.add('wrong')
+    }
+}
 
+function clearStatusClass(element){
+    element.classList.remove('correct')
+    element.classList.remove('wrong')
+}
 const questions =[
 {
     question: "What is 2 +2",
@@ -64,6 +81,34 @@ const questions =[
 
 
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // first I need to have an array for answer
