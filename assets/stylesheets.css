@@ -7,8 +7,12 @@ body{
    
 }
 .btn{
+display: flex;
+justify-content: space-between;
 position: relative;
 top: 20px;
+
+
 }
 .Question{
     position: relative;
