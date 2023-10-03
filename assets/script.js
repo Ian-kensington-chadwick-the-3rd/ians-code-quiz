@@ -12,9 +12,9 @@ var questions = [
         answer: "0"
     },
     {
-        title: "What does a  ",
-        choices: ["0", "undefined", "true", "false"],
-        answer: "false"
+        title: "What does HTML stand for? ",
+        choices: ["Hyper Trainer Marking Language", "Hyper Text Marketing Language", "Hyper Mark Up Language", "Hyper Text Markup Language"],
+        answer: "Hyper Text Markup Language"
     },
     {
         title: "Which of the following HTML tags would result in bold text?",
