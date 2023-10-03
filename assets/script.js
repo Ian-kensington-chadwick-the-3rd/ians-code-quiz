@@ -12,7 +12,7 @@ var questions = [
         answer: "0"
     },
     {
-        title: "What is a ",
+        title: "What does a  ",
         choices: ["0", "undefined", "true", "false"],
         answer: "false"
     },
@@ -92,7 +92,7 @@ function checkAns(event) {
 // condition that selected answer is correct
     if (choice.textContent == questions[questionIndex].answer) {
         score++;
-        feedback.textContent = "Correct! 😊";
+        feedback.textContent = "Correct! ";
         newDiv.appendChild(feedback);
         
         newDiv.appendChild(next);
@@ -100,7 +100,7 @@ function checkAns(event) {
 //condition that the selected answer is incorrect
     } else {
         countdown = countdown - penalty;
-        feedback.textContent = "Incorrect! 🙁";
+        feedback.textContent = "Incorrect! ";
         newDiv.appendChild(feedback);
     }
 }
@@ -185,7 +185,7 @@ function theEnd() {
             storeScores.push(finalScore);
             var newScore = JSON.stringify(storeScores);
             localStorage.setItem("storeScores", newScore);
-            window.location.replace("highscores.html");
+            window.location.replace("highscore.html");
         }
     });
 };
