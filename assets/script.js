@@ -20,7 +20,23 @@ continueBtn.onclick = ()=>{
     startScreen.classList.remove("hide");
 };
 
-
+//If Start Button Clicked
+startBtn.onclick = () => {
+  function countdown(){
+      counter--;
+          if (counter === 0){
+              clearInterval(startCountdown)
+              quizEnd()
+          };
+  let timeRem = document.querySelector("#time-rem");
+  let timeTag = "<span>Time Left: "+ counter +"</span>"
+  timeRem.innerHTML = timeTag;
+  };
+  var startCountdown = setInterval(countdown, 1000);
+  startScreen.classList.add("hide");
+  quizBox.classList.remove("hide");
+  showQuestions(queCount)
+};
 
 
 
