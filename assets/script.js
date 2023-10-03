@@ -22,9 +22,9 @@ var questions = [
         answer: "< strong >"
     },
     {
-        title: "Which CSS property controls text size?",
-        choices: ["font-size", "text-size", "font-style", "size"],
-        answer: "font-size"
+        title: "Which CSS stand for?",
+        choices: ["cascading styling sheets", "styling sheets", "cascading", "sheets"],
+        answer: "cascading styling sheets"
     },
     {
         title: "How do you add a comment in a JavaScript file?",
