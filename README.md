@@ -21,3 +21,6 @@ I made sure everything was linked together properly
 
 * Steve Griffith
     * url=https://www.youtube.com/watch?v=OOcxXyckmcs
+
+* Brian Design
+    * url=https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2681s
