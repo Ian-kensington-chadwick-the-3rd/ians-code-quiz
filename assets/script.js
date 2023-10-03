@@ -162,7 +162,7 @@ function theEnd() {
     submit.textContent = "Submit";
     quizContent.appendChild(submit);
 
-// Event listener for submission button and storage initials and score
+// Event listener for submission button and storage initials and scores
     submit.addEventListener("click", function() {
         var initials = inputBox.value;
 
